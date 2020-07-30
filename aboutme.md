@@ -1,0 +1,3 @@
+zcmimi是来自偏远小渔村的菜鸡
+
+高一现役OIer,是Archlinuxer

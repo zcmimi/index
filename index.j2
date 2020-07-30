@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang=zh>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zdhxiong/mdui@0.4.3/dist/css/mdui.min.css">
+    <!--highlight-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/assets/markdown.css>
+
+    <title>zcmimi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' itemprop="description" content="zcmimi">
+    <meta name="keywords" content="zcmimi">
+
+    <script src="bundle.js"></script>
+</head>
+
+<body class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-container">
+    <div class="mdui-appbar">
+        <div class="mdui-toolbar mdui-color-theme-accent">
+            <div class="mdui-typo-title">zcmimi</div>
+        </div>
+        <div class="mdui-tab" mdui-tab>
+            <a href="#aboutme" class="mdui-ripple mdui-ripple-white">关于我</a>
+            <a href="#catchme" class="mdui-ripple mdui-ripple-white">联系我</a>
+            <a href="#links" class="mdui-ripple mdui-ripple-white">友链</a>
+        </div>
+        <div id="aboutme" class="mdui-p-a-2 md-body">{{aboutme}}</div>
+        <div id="catchme" class="mdui-p-a-2 md-body">{{catchme}}</div>
+        <div id="links" class="mdui-p-a-2 md-body">
+            {%for i in links%}
+                <div class='mdui-subheader'>{{i}}</div>
+                <div class='links-row mdui-row-xs-2 mdui-row-sm-3 mdui-row-md-4 mdui-row-lg-6'>
+                    {%for j in links[i]%}
+                        <div class="mdui-col">
+                            <a href="{{j.url}}" target="_blank">
+                                <div class="mdui-card" style="background-color: {{j['bg-color']}};backdrop-filter:blur(5px);">
+                                    <div class="mdui-card-media">
+                                        <img class="link-img" data-src="{{j.avatar}}" src='{{assets_rt}}/icon/loading.svg' alt="{{j.name}}">
+                                    </div>
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title">{{j.name}}</div>
+                                        <div class="mdui-card-primary-subtitle">{{j.content}}</div>
+                                    </div>
+                                </div>
+                            </a><br>
+                        </div>
+                    {%endfor%}
+                </div>
+            {%endfor%}
+            <script>lazyload();setimgcube();</script>
+        </div>
+    </div>
+</body>
+<footer class="mdui-m-t-5">
+    <div class="mdui-card">
+        <div class="mdui-card-content mdui-p-a-5">
+            <div class="mdui-container">
+                <div class="mdui-text-center">
+                    <div>Copyright ©&nbsp;2019-2020&nbsp;zcmimi</div>
+                    <div>上次更新: {{time}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/gh/zdhxiong/mdui@0.4.3/dist/js/mdui.min.js"></script>
+
+<script src="//code.tidio.co/mjaquwwgw2d1frnjvgwxbjpghzw3mdwi.js" async></script>
+
+</html>
