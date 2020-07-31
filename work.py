@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 import os
 os.system("pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple")
