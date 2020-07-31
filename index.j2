@@ -29,10 +29,28 @@
         <div class="mdui-tab" mdui-tab>
             <a href="#aboutme" class="mdui-ripple mdui-ripple-white">关于我</a>
             <a href="#catchme" class="mdui-ripple mdui-ripple-white">联系我</a>
+            <a href="#comment" class="mdui-ripple mdui-ripple-white">留言</a>
             <a href="#links" class="mdui-ripple mdui-ripple-white">友链</a>
         </div>
         <div id="aboutme" class="mdui-p-a-2 md-body">{{aboutme}}</div>
         <div id="catchme" class="mdui-p-a-2 md-body">{{catchme}}</div>
+        <div id="comment" class="mdui-p-a-2">
+<script>
+var valinejs=document.createElement('script');
+valinejs.src="https://cdn.jsdelivr.net/gh/xCss/Valine/dist/Valine.min.js";
+valinejs.async=true;
+valinejs.onload=function(){
+    new Valine({
+        el: '#comment',
+        placeholder: "说几句嘛qwq",
+        appId: "Og1eXEuOFMLfvqnpJQ1VyWt3-gzGzoHsz",
+        appKey: "95ofH6sniIJEAwlSYrkGX581",
+        path: window.location.pathname,
+    });
+}
+document.getElementsByTagName("head")[0].appendChild(valinejs);            
+</script>
+        </div>
         <div id="links" class="mdui-p-a-2 md-body">
             {%for i in links%}
                 <div class='mdui-subheader'>{{i}}</div>
@@ -92,6 +110,6 @@ for(let i=0;i<list.length;++i){
 
 <script src="https://cdn.jsdelivr.net/gh/zdhxiong/mdui@0.4.3/dist/js/mdui.min.js" async></script>
 
-<script src="//code.tidio.co/mjaquwwgw2d1frnjvgwxbjpghzw3mdwi.js" async></script>
+<script src="https://code.tidio.co/mjaquwwgw2d1frnjvgwxbjpghzw3mdwi.js" async></script>
 
 </html>
