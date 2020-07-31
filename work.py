@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-import pip
-pip._internal.main([
-    "install","-r","requirement.txt",
-    "-i","https://pypi.tuna.tsinghua.edu.cn/simple"
-])
+import os
+os.system("pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple")
 
 import mistune
 import time
