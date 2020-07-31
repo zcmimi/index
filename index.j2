@@ -22,8 +22,8 @@
         <div class="mdui-toolbar mdui-color-theme-accent">
             <div class="mdui-typo-title">zcmimi</div>
             <div class="mdui-toolbar-spacer"></div>
-            <a href="https://github.com/zcmimi" class="mdui-icon mqii mqii-github"></a>
-            <a href="https://twitter.com/zc_mimi" class="mdui-icon mqii mqii-twitter"></a>
+            <a href="https://github.com/zcmimi" target="_blank" class="mdui-icon mqii mqii-github"></a>
+            <a href="https://twitter.com/zc_mimi" target="_blank" class="mdui-icon mqii mqii-twitter"></a>
             <a href="https://blog.zcmimi.top" class="mdui-icon material-icons">border_color</a>
         </div>
         <div class="mdui-tab" mdui-tab>
@@ -63,8 +63,8 @@ document.getElementsByTagName("head")[0].appendChild(valinejs);
                                         <img class="link-img" src="{{j.avatar}}" alt="{{j.name}}">
                                     </div>
                                     <div class="mdui-card-primary">
-                                        <div class="mdui-card-primary-title">{{j.name}}</div>
-                                        <div class="mdui-card-primary-subtitle">{{j.content}}</div>
+                                        <div class="mdui-card-primary-title mdui-text-truncate">{{j.name}}</div>
+                                        <div class="mdui-card-primary-subtitle mdui-text-truncate" mdui-tooltip="{'content':'{{j.content}}' }">{{j.content}}</div>
                                     </div>
                                 </div>
                             </a><br>
@@ -89,6 +89,12 @@ for(let i=0;i<list.length;++i){
     list[i].style.height=x+"px";
 }
 </script>
+            <div class='mdui-subheader'>申请友链</div>
+
+            <div class='mdui-typo'>
+                <p>请到github仓库提交pullrequest申请,审核通过后自动部署</p>
+                <p>详见: <a href="https://github.com/zcmimi/index" target="_blank">本页仓库</a></p>
+            </div>
 
         </div>
     </div>

@@ -11,10 +11,18 @@ from jinja2 import Environment,FileSystemLoader
 
 aboutme=mistune.markdown(open("aboutme.md",encoding="utf-8").read())
 
-try:
-    links=yaml.load(open("links.yml",encoding="utf-8").read(),Loader=yaml.CLoader)
-except:
-    links=yaml.load(open("links.yml",encoding="utf-8").read())
+try:yamloader=yaml.CLoader
+except:yamloader=yaml.SafeLoader
+
+links={}
+for i in os.listdir("links"):
+    if not os.path.isdir("links/"+i):continue
+    links[i]=[]
+    for j in os.listdir("links/"+i):
+        if not os.path.exists("links/"+i+"/"+j+"/config.yml"):continue
+        x=yaml.load(open("links/"+i+'/'+j+"/config.yml").read(),Loader=yamloader)
+        if "//" not in x["avatar"]:x["avatar"]='/'.join(["links",i,j,x["avatar"]])
+        links[i].append(x)
 
 env=Environment(loader=FileSystemLoader('.'))
 env.trim_blocks=True
