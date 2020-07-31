@@ -12,9 +12,19 @@
 
 友链申请流程:
 
-1. 在`links/Friends`文件夹下新建一个文件夹,最好是你的用户名
+1. 添加`zcmimi.top`的友链
    
-2. 在该文件夹中新建文件`config.yml`,格式:
+   > 昵称: zcmimi
+   > 
+   > 网址: https://zcmimi.top
+   > 
+   > 头像: https://zcmimi.top/img/avatar.webp
+   > 
+   > 描述: 一个菜鸡OIer,是archlinuxer
+   
+2. 在`links/Friends`文件夹下新建一个文件夹,最好是你的用户名
+   
+3. 在该文件夹中新建文件`config.yml`,格式:
    
    ```yaml
    name: "你的名字"
@@ -29,6 +39,6 @@
 
    `avatar: avatar.png`(您的logo文件名)
 
-3. 新建一个pullrequest
+4. 新建一个pullrequest
    
-4. 当pullrequest通过后,您的网站将在1h内显示在`zcmimi.top`的友链界面
+5. 当pullrequest通过后,您的网站将在1h内显示在`zcmimi.top`的友链界面
