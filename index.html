@@ -2,13 +2,13 @@
 <html lang=zh>
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zdhxiong/mdui@0.4.3/dist/css/mdui.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/mdui/css/mdui.min.css">
     <!--highlight-->
     <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css">
-    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/assets/markdown.css>
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/markdown.css>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/assets/icon/mqii/mqii.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/icon/mqii/mqii.css" type="text/css">
 
     <title>zcmimi</title>
     <meta charset="utf-8">
@@ -20,26 +20,125 @@
 <body class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-container">
     <div class="mdui-appbar">
         <div class="mdui-toolbar mdui-color-theme-accent">
-            <div class="mdui-typo-title">zcmimi</div>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-avatar"><img src="img/avatar_2.jpg"></div>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">zcmimi</div>
+                    <div class="mdui-list-item-text mdui-list-item-one-line">自己选的路,跪着也要走完</div>
+                </div>
+            </li>
             <div class="mdui-toolbar-spacer"></div>
             <a href="https://github.com/zcmimi" target="_blank" class="mdui-icon mqii mqii-github"></a>
             <a href="https://twitter.com/zc_mimi" target="_blank" class="mdui-icon mqii mqii-twitter"></a>
             <a href="https://blog.zcmimi.top" class="mdui-icon material-icons">border_color</a>
         </div>
         <div class="mdui-tab" mdui-tab>
-            <a href="#aboutme" class="mdui-ripple mdui-ripple-white">关于我</a>
-            <a href="#catchme" class="mdui-ripple mdui-ripple-white">联系我</a>
+            <a href="#aboutme" class="mdui-ripple mdui-ripple-white">关于</a>
+            <a href="#project" class="mdui-ripple mdui-ripple-white">项目</a>
+            <a href="#catchme" class="mdui-ripple mdui-ripple-white">联系</a>
             <a href="#comment" class="mdui-ripple mdui-ripple-white">留言</a>
             <a href="#links" class="mdui-ripple mdui-ripple-white">友链</a>
         </div>
-        <div id="aboutme" class="mdui-p-a-2 md-body"><p><code>ZC</code>是我名字的缩写,你也可以叫我<code>ZC</code></p>
+        <div id="aboutme" class="mdui-p-a-2 md-body"><p>我的博客: <a href="https://blog.zcmimi.top">https://blog.zcmimi.top</a></p>
+<p>目前以记录OI学习笔记为主,欢迎来玩耍、交流</p>
+<hr>
+<p><code>ZC</code>是我名字的缩写,你也可以叫我<code>ZC</code></p>
 <p><code>mimi</code>是小名,你也可以当作是猫猫的意思</p>
 <hr>
 <p><code>zcmimi</code>是来自偏远小渔村的菜鸡</p>
 <p>高一现役OIer,是Archlinuxer</p>
 <p>是google与material design的粉丝</p>
+<p>性格在<code>ISTP</code>与<code>ISFJ</code>之间左右横跳</p>
+<p>是单身音游狗,主玩<code>malody</code>,也会玩玩<code>arceae</code>,<code>phigros</code>,<code>cytus</code>等</p>
+<p>喜欢干的事情: 玩音游,整前端,开发小项目,美化Linux,打数据结构</p>
+<p>喜欢吃的食物: 鳝鱼,油筷,鹅肉,牛肉</p>
+<p>编辑器: vscode, 主题: nord</p>
+<p>码风: 不是大括号换行,说话不带空格,能短就短</p>
+<p>当前设备:</p>
+<pre><code class="lang-text">                   -`                    zcmimi@zc 
+                  .o+`                   --------- 
+                 `ooo/                   OS: Arch Linux x86_64 
+                `+oooo:                  Host: G3 3590 
+               `+oooooo:                 Kernel: 5.4.54-1-lts 
+               -+oooooo+:                Uptime: 20 hours, 1 min 
+             `/:-:++oooo+:               Packages: 1582 (pacman) 
+            `/++++/+++++++:              Shell: zsh 5.8 
+           `/++++++++++++++:             Resolution: 1920x1080 
+          `/+++ooooooooooooo/`           DE: GNOME 
+         ./ooosssso++osssssso+`          WM: Mutter 
+        .oossssso-````/ossssss+`         WM Theme: vimix-dark-doder 
+       -osssssso.      :ssssssso.        Theme: vimix-dark-laptop-doder [GTK2/3] 
+      :osssssss/        osssso+++.       Icons: Vimix-Doder [GTK2/3] 
+     /ossssssss/        +ssssooo/-       Terminal: gnome-terminal 
+   `/ossssso+/:-        -:/+osssso+-     CPU: Intel i5-9300H (8) @ 4.100GHz 
+  `+sso+:-`                 `.-/+oso:    GPU: Intel UHD Graphics 630 
+ `++:.                           `-/+/   GPU: NVIDIA GeForce GTX 1650 Mobile / Max-Q 
+ .`                                 `/   Memory: 7596MiB / 19850MiB
+</code></pre>
+<pre><code class="lang-text">         -o          o-            u0_a143@localhost
+          +hydNNNNdyh+             -----------------
+        +mMMMMMMMMMMMMm+           OS: Android 9 aarch64
+      dMMm:NMMMMMMN:mMMd         Host: xiaomi Redmi Note 8
+      hMMMMMMMMMMMMMMMMMMh         Kernel: 4.14.98-perf+
+  ..  yyyyyyyyyyyyyyyyyyyy  ..     Uptime: 14 days, 4 hours, 17 mins
+.mMMmMMMMMMMMMMMMMMMMMMMMmMMm.   Packages: 104 (dpkg), 1 (pkg)
+:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:   Shell: zsh 5.8
+:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:   CPU: Qualcomm TRINKET (8) @ 1.804GHz
+:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:   Memory: 3510MiB / 5637MiB
+:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
+-MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM-
+ +yy+ MMMMMMMMMMMMMMMMMMMM +yy+
+      mMMMMMMMMMMMMMMMMMMm
+      /++MMMMh++hMMMM++/
+          MMMMo  oMMMM
+          MMMMo  oMMMM
+          oNMm-  -mMNs
+</code></pre>
 </div>
-        <div id="catchme" class="mdui-p-a-2 md-body"></div>
+        <div id="project" class="mdui-p-a-2 md-body"><h2>　我的项目</h2>
+<ul class="mdui-list">
+    <a href="https://github.com/zcmimi/py-blog" target="_blank" class="mdui-list-item">
+        <i class="mdui-list-item-avatar mdui-icon material-icons">polymer</i>
+        <div class="mdui-list-item-content">
+            <div class="mdui-list-item-title">py-blog</div>
+            <div class="mdui-list-item-text">一个快速、方便的博客生成器,基于python</div>
+        </div>
+    </a>
+    <a href="https://music.zcmimi.top" target="_blank" class="mdui-list-item">
+        <i class="mdui-list-item-avatar mdui-icon material-icons">queue_music</i>
+        <div class="mdui-list-item-content">
+            <div class="mdui-list-item-title">music-playlist-downloader</div>
+            <div class="mdui-list-item-text">一个在线歌单下载器,也可以用来听歌</div>
+        </div>
+    </a>
+    <a href="https://zcmimi.github.io/markdown-editor" target="_blank" class="mdui-list-item">
+        <i class="mdui-list-item-avatar mdui-icon material-icons">flip</i>
+        <div class="mdui-list-item-content">
+            <div class="mdui-list-item-title">markdown-editor</div>
+            <div class="mdui-list-item-text">monaco-editor + markedjs = markdown-editor !</div>
+        </div>
+    </a>    
+    <a href="https://mfsw.zcmimi.top" target="_blank" class="mdui-list-item">
+        <i class="mdui-list-item-avatar mdui-icon material-icons">flight_takeoff</i>
+        <div class="mdui-list-item-content">
+            <div class="mdui-list-item-title">mfsw</div>
+            <div class="mdui-list-item-text">为朋友们提供廉价的fq服务</div>
+        </div>
+    </a>
+</ul></div>
+        <div id="catchme" class="mdui-p-a-2 md-body"><p><a href="mailto:zcmimi@outlook.com" target="blank" class="mdui-chip">
+    <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">email</i></span>
+    <span class="mdui-chip-title">zcmimi@outlook.com</span>
+</a>
+<a href="https://twitter.com/zc_mimi" target="_blank" class="mdui-chip">
+    <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon mqii mqii-twitter"></i></span>
+    <span class="mdui-chip-title">twitter@zc_mimi</span>
+</a>
+<a href="https://t.me/zcmimi" target="_blank" class="mdui-chip">
+    <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon mqii mqii-telegram"></i></span>
+    <span class="mdui-chip-title">telegram@zcmimi</span>
+</a></p>
+</div>
         <div id="comment" class="mdui-p-a-2">
 <script>
 var valinejs=document.createElement('script');
@@ -271,7 +370,6 @@ for(let i=0;i<list.length;++i){
     var x;
     if(list[i].clientWidth>list[i].clientHeight)x=list[i].clientWidth;
     else x=list[i].clientHeight;
-    console.log(x);
     list[i].style.width=x+"px";
     list[i].style.height=x+"px";
 }
@@ -292,16 +390,16 @@ for(let i=0;i<list.length;++i){
             <div class="mdui-container">
                 <div class="mdui-text-center">
                     <div>Copyright ©&nbsp;2019-2020&nbsp;zcmimi</div>
-                    <div>last build: 2020-07-31</div>
+                    <div>last build: 2020-08-01</div>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="highlight.js" async></script>
+<script src="highlight.js" async onload="highlight();"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/zdhxiong/mdui@0.4.3/dist/js/mdui.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/mdui/js/mdui.min.js" async></script>
 
 
 </html>

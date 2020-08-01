@@ -1,15 +1,22 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 import os
-os.system("pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple")
-
 import mistune
 import time
-import yaml
-from encrypt import encrypt
-from jinja2 import Environment,FileSystemLoader
 
-aboutme=mistune.markdown(open("aboutme.md",encoding="utf-8").read())
+try:
+    import yaml
+    from encrypt import encrypt
+    from jinja2 import Environment,FileSystemLoader
+except:
+    os.system("pip3 install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple")
+    import yaml
+    from encrypt import encrypt
+    from jinja2 import Environment,FileSystemLoader
+
+aboutme=mistune.markdown(open("aboutme.md",encoding="utf-8").read(),escape=False)
+catchme=mistune.markdown(open("catchme.md",encoding="utf-8").read(),escape=False)
+project=mistune.markdown(open("project.md",encoding="utf-8").read(),escape=False)
 
 try:yamloader=yaml.CLoader
 except:yamloader=yaml.SafeLoader
@@ -32,7 +39,8 @@ template=env.get_template("index.j2")
 
 open("index.html","w",encoding="utf-8").write(template.render(
     aboutme=aboutme,
-    catchme="",
+    catchme=catchme,
+    project=project,
     links=links,
     time=time.strftime("%Y-%m-%d",time.localtime())
 ))

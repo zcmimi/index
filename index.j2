@@ -2,13 +2,13 @@
 <html lang=zh>
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zdhxiong/mdui@0.4.3/dist/css/mdui.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/mdui/css/mdui.min.css">
     <!--highlight-->
     <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css">
-    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/assets/markdown.css>
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/markdown.css>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/assets/icon/mqii/mqii.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/icon/mqii/mqii.css" type="text/css">
 
     <title>zcmimi</title>
     <meta charset="utf-8">
@@ -20,19 +20,27 @@
 <body class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-container">
     <div class="mdui-appbar">
         <div class="mdui-toolbar mdui-color-theme-accent">
-            <div class="mdui-typo-title">zcmimi</div>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-avatar"><img src="img/avatar_2.jpg"></div>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">zcmimi</div>
+                    <div class="mdui-list-item-text mdui-list-item-one-line">自己选的路,跪着也要走完</div>
+                </div>
+            </li>
             <div class="mdui-toolbar-spacer"></div>
             <a href="https://github.com/zcmimi" target="_blank" class="mdui-icon mqii mqii-github"></a>
             <a href="https://twitter.com/zc_mimi" target="_blank" class="mdui-icon mqii mqii-twitter"></a>
             <a href="https://blog.zcmimi.top" class="mdui-icon material-icons">border_color</a>
         </div>
         <div class="mdui-tab" mdui-tab>
-            <a href="#aboutme" class="mdui-ripple mdui-ripple-white">关于我</a>
-            <a href="#catchme" class="mdui-ripple mdui-ripple-white">联系我</a>
+            <a href="#aboutme" class="mdui-ripple mdui-ripple-white">关于</a>
+            <a href="#project" class="mdui-ripple mdui-ripple-white">项目</a>
+            <a href="#catchme" class="mdui-ripple mdui-ripple-white">联系</a>
             <a href="#comment" class="mdui-ripple mdui-ripple-white">留言</a>
             <a href="#links" class="mdui-ripple mdui-ripple-white">友链</a>
         </div>
         <div id="aboutme" class="mdui-p-a-2 md-body">{{aboutme}}</div>
+        <div id="project" class="mdui-p-a-2 md-body">{{project}}</div>
         <div id="catchme" class="mdui-p-a-2 md-body">{{catchme}}</div>
         <div id="comment" class="mdui-p-a-2">
 <script>
@@ -84,7 +92,6 @@ for(let i=0;i<list.length;++i){
     var x;
     if(list[i].clientWidth>list[i].clientHeight)x=list[i].clientWidth;
     else x=list[i].clientHeight;
-    console.log(x);
     list[i].style.width=x+"px";
     list[i].style.height=x+"px";
 }
@@ -112,9 +119,9 @@ for(let i=0;i<list.length;++i){
     </div>
 </footer>
 
-<script src="highlight.js" async></script>
+<script src="highlight.js" async onload="highlight();"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/zdhxiong/mdui@0.4.3/dist/js/mdui.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/material/assets/mdui/js/mdui.min.js" async></script>
 
 {# <script src="https://code.tidio.co/mjaquwwgw2d1frnjvgwxbjpghzw3mdwi.js" async></script> #}
 
