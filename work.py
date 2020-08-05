@@ -6,12 +6,10 @@ import time
 
 try:
     import yaml
-    from encrypt import encrypt
     from jinja2 import Environment,FileSystemLoader
 except:
     os.system("pip3 install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple")
     import yaml
-    from encrypt import encrypt
     from jinja2 import Environment,FileSystemLoader
 
 aboutme=mistune.markdown(open("aboutme.md",encoding="utf-8").read(),escape=False)
