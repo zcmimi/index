@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-import os
+import os,time
 import mistune
-import time
 
 try:
     import yaml
@@ -26,8 +25,10 @@ for i in os.listdir("links"):
     for j in os.listdir("links/"+i):
         if not os.path.exists("links/"+i+"/"+j+"/config.yml"):continue
         x=yaml.load(open("links/"+i+'/'+j+"/config.yml").read(),Loader=yamloader)
-        if "//" not in x["avatar"]:x["avatar"]='/'.join(["links",i,j,x["avatar"]])
+        if "//" not in x["avatar"]:x["avatar"]='/'+'/'.join(["links",i,j,x["avatar"]])
         links[i].append(x)
+
+open("links.yml","w",encoding="utf-8").write(yaml.dump(links))
 
 env=Environment(loader=FileSystemLoader('.'))
 env.trim_blocks=True
