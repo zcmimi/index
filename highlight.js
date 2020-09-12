@@ -1,5 +1,6 @@
 function highlight(){
     document.querySelectorAll('pre code').forEach((x)=>{
+        x.innerHTML=x.innerHTML.trim();
         var lang='-'+x.classList[0],len=x.innerText.length;
         lang=lang.split('-'),lang=lang[lang.length-1];
         hljs.highlightBlock(x);
