@@ -22,11 +22,11 @@
             <div class="mdui-list-item-text">monaco-editor + markedjs = markdown-editor !</div>
         </div>
     </a>    
-    <a href="https://mfsw.zcmimi.top" target="_blank" class="mdui-list-item">
+    <a href="https://mfjlb.top" target="_blank" class="mdui-list-item">
         <i class="mdui-list-item-avatar mdui-icon material-icons">flight_takeoff</i>
         <div class="mdui-list-item-content">
-            <div class="mdui-list-item-title">mfsw</div>
-            <div class="mdui-list-item-text">为朋友们提供廉价的fq服务</div>
+            <div class="mdui-list-item-title">mfjlb</div>
+            <div class="mdui-list-item-text">为朋友们提供fq服务,注册时请务必查看console</div>
         </div>
     </a>
 </ul>

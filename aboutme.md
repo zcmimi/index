@@ -12,7 +12,7 @@
 
 `zcmimi`是来自偏远小渔村的菜鸡
 
-高一现役OIer,是Archlinuxer
+高二现役OIer,是Archlinuxer
 
 是google与material design的粉丝
 
