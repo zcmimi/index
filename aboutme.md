@@ -18,7 +18,7 @@
 
 性格在`ISTP`与`ISFJ`之间左右横跳
 
-是单身音游狗,主玩`malody`,也会玩玩`arceae`,`phigros`,`cytus`等
+是单身音游狗,主玩`malody`,也会玩玩`arcaea`,`phigros`,`cytus`等
 
 喜欢干的事情: 玩音游,整前端,开发小项目,美化Linux,打数据结构
 
