@@ -1,6 +1,7 @@
 function highlight(){
     document.querySelectorAll('pre code').forEach((x)=>{
-        x.innerHTML=x.innerHTML.trim();
+    	if(x.classList.contains('hljs-nb')){x.remove();return;}
+	x.innerHTML=x.innerHTML.replace(/\s+$/g,'');
         var lang='-'+x.classList[0],len=x.innerText.length;
         lang=lang.split('-'),lang=lang[lang.length-1];
         hljs.highlightBlock(x);
