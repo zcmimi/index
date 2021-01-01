@@ -5,6 +5,11 @@ Friends:
     \u957F\u5462\u3002"
   name: ex-jason
   url: https://ex-jason.com
+- avatar: https://gravatar.loli.net/avatar/8bb47097afc78f4205aa6131557824cf?size=300&d=robohash
+  bg-color: '#40E0D0'
+  content: "\u300E\u51E1\u5FC3\u6240\u5411\uFF0C\u7D20\u5C65\u4EE5\u5F80\u300F"
+  name: Xmoe
+  url: https://xmoe.xyz
 - avatar: /links/Friends/tarjin/tarjin.webp
   bg-color: '#fff'
   content: "\u6765\u81EABJ\u7684\u521D\u4E00\u83DC\u9E21OIer"
@@ -20,22 +25,21 @@ Friends:
   content: "OIer,\u4EBA\u8D62"
   name: Henry-y
   url: https://cnblogs.com/henry-1202
-- avatar: https://cdn.jsdelivr.net/gh/userunknownx/userunknownx.github.io/images/avatar.png
-  bg-color: '#40E0D0'
-  content: "\u300C\u6211\u4EEC\u7684\u5F81\u9014\u662F\u661F\u8FB0\u5927\u6D77\u300D"
-  name: Path Unknown
-  url: https://pathunknown.ml
-- avatar: https://guodong2005.github.io/images/avatar.png
+- avatar: https://guodong2005.github.io/img/Big.jpg
   bg-color: '#ffeaef'
   content: OIer
   name: Guodong
   url: https://guodong2005.github.io
+- avatar: https://coldin.top/wp-content/uploads/2020/08/cropped-5458AC55-22E0-4225-9BA5-2DAF7EFB526F-1.jpeg
+  content: "\u73A9Minecraft\u7684\u8001\u670D\u4E3B"
+  name: "\u51B7\u5F71\u535A\u5BA2"
+  url: https://coldin04.top
 - avatar: /links/Friends/QuartZ_Z/QuartZ_Z.webp
   bg-color: '#0f6bbf'
   content: "\u5DE8\u4F6C"
   name: QuartZ_Z
   url: https://www.cnblogs.com/quzhizhou/
-- avatar: https://pyq4ll.coding-pages.com/img/logo.png
+- avatar: https://pyq4ll.coding-pages.com/avatar.png
   bg-color: '#f0d7b4'
   content: "\u840C\u65B0MADer"
   name: Cerium
@@ -55,6 +59,12 @@ Friends:
   content: "\u4E00\u53EA\u6C34\u6C34\u736D"
   name: Tsukimaru
   url: https://cutekibry.github.io/
+- avatar: https://lakphy.gitee.io/logo.jpg
+  bg-color: '#fff'
+  content: "\u7535\u5B50\u7231\u597D\u8005/\u5404\u79CD\u8BA1\u7B97\u673A\u8BED\u8A00\
+    \u4E71\u70E9\u778E\u5B66"
+  name: Lakphy
+  url: https://lakphy.me
 - avatar: /links/Friends/Lskkkno1/Lskkkno1.webp
   bg-color: rgb(152, 205, 247)
   content: "csyz \u9AD8\u4E8C\u73B0\u5F79 OIer"
